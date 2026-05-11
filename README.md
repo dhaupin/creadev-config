@@ -7,17 +7,27 @@
 
 ## Install
 
-\`\`\`bash
+```bash
 npm install @creadev.org/config
-\`\`\`
+```
 
 ## Usage
 
-\`\`\`typescript
-import { } from '@creadev.org/config';
+```typescript
+import { Config, createConfig, get, set } from '@creadev.org/config';
 
-// ...
-\`\`\`
+const config = createConfig();
+await config.set('DEBUG', true);
+const value = await config.get('DEBUG');
+```
+
+## API
+
+| Function | Description |
+|----------|-------------|
+| `createConfig(options?)` | Create config instance |
+| `get(key)` | Get config value |
+| `set(key, value)` | Set config value |
 
 ## License
 
