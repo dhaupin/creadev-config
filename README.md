@@ -32,3 +32,4 @@ const value = await config.get('DEBUG');
 ## License
 
 MIT
+trigger
