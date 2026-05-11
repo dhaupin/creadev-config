@@ -1,0 +1,19 @@
+{
+  "name": "@creadev.org/config",
+  "version": "0.3.1",
+  "type": "module",
+  "description": "Config registry + environment",
+  "keywords": ["config", "settings", "env"],
+  "author": "dhaupin",
+  "repository": "https://github.com/dhaupin/creadev-config",
+  "license": "MIT",
+  "publishConfig": {"access": "public"},
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {"types": "./dist/index.d.ts", "import": "./dist/index.js"}
+  },
+  "scripts": {"build": "tsc", "test": "vitest"},
+  "devDependencies": {"typescript": "^5.0.0", "vitest": "^1.6.1"},
+  "files": ["dist"]
+}
